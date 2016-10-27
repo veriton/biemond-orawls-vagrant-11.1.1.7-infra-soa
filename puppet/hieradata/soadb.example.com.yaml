@@ -1,0 +1,28 @@
+---
+
+# global oracle vars
+oracle_base_dir:          '/oracle'
+oracle_home_dir:          '/oracle/product/11.2/db'
+
+# global OS vars
+oracle_os_user:           "oracle"
+oracle_os_group:          "dba"
+oracle_download_dir:      "/var/tmp/install"
+oracle_source:            "/software"
+
+oracle_database_name:         'soarepos'
+oracle_database_domain_name:  'example.com'
+oracle_database_service_name: 'soarepos.example.com'
+oracle_database_host:         'soadb.example.com:1521'
+
+oracle_database_sys_password:    'Welcome01'
+oracle_database_system_password: 'Welcome01'
+
+# TODO - these are only here in 11g - move to 12c place
+repository_type:          "soasuite"
+repository_prefix:        "DEV"
+repository_password:      "Welcome01"
+
+repository_type2:          "soasuite"
+repository_prefix2:        "DEV2"
+repository_password2:      "Welcome01"
