@@ -13,10 +13,6 @@ hosts:
   'soa2node2.example.com':
     ip:                "10.10.10.22"
     host_aliases:      'soa2node2'
-  'mft1admin.example.com':
-    ip:                "10.10.10.71"
-    host_aliases:      'mft1admin'
-
 
 # global WebLogic vars
 wls_oracle_base_home_dir: &wls_oracle_base_home_dir "/opt/oracle"
@@ -52,15 +48,6 @@ orawls::weblogic::os_group:             *wls_os_group
 orawls::weblogic::download_dir:         *wls_download_dir
 orawls::weblogic::source:               *wls_source
 orawls::weblogic::remote_file:          false
-
-# patches for WebLogic 10.3.6
-bsu_instances:
-  # SU Patch [S8C2]: WLS PATCH SET UPDATE 10.3.6.0.13 (18-JAN-2016)
-  'S8C2':
-    patch_id:                "S8C2"
-    patch_file:              "p21984589_1036_Generic.zip"
-    log_output:              true
-    remote_file:             false
 
 # handy WebLogic scripts in /opt/scripts/wls
 orautils::osOracleHomeParam:      *wls_oracle_base_home_dir

@@ -49,7 +49,7 @@ http://10.10.10.21:7001/em with weblogic1 as password
 ###software
 - JDK 1.7u55 jdk-7u55-linux-x64.tar.gz
 - JDK 7 JCE policy UnlimitedJCEPolicyJDK7.zip
-- WebLogic 11g wls1036_generic.jar
+- WebLogic 11g wls1036_generic.jar, extracted from e-delivery V29856-01.zip
 - WLS PSU 10.3.6.0.13 p21984589_1036_Generic.zip
 - Oracle SOA Suite 11.1.1.7.0
   * ofm_soa_generic_11.1.1.7.0_disk1_1of2.zip

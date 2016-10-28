@@ -86,9 +86,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       puppet.manifests_path    = "puppet/manifests"
       puppet.module_path       = "puppet/modules"
       puppet.manifest_file     = "db.pp"
-      puppet.options           = "--verbose --strict_variables --hiera_config /vagrant/puppet/hiera.yaml"
-      # TODO need to define 
-      puppet.options           = "--verbose --strict_variables --hiera_config /vagrant/puppet/hiera.yaml"
+      puppet.options           = "--verbose --hiera_config /vagrant/puppet/hiera.yaml"
+      # TODO need to define ::oradb_inst_loc_data as used in installdb.pp#84e before enabling strict_variables
+      #puppet.options           = "--verbose --strict_variables --hiera_config /vagrant/puppet/hiera.yaml"
 
       puppet.facter = {
         "environment" => "development",

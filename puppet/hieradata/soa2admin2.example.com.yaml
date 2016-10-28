@@ -38,6 +38,15 @@ orautils::wlsAdminServerParam:    "AdminServer"
 
 logoutput:                     &logoutput                     true
 
+# Patches for WebLogic 10.3.6
+bsu_instances:
+  # SU Patch [S8C2]: WLS PATCH SET UPDATE 10.3.6.0.13 (18-JAN-2016)
+  'S8C2':
+    patch_id:                "S8C2"
+    patch_file:              "p21984589_1036_Generic.zip"
+    log_output:              true
+    remote_file:             false
+
 # FMW installation on top of WebLogic 10.3.6
 fmw_installations:
   'soaPS6':
